@@ -5,7 +5,7 @@ Requirements
 * Java v17
 
 Endpoints:
-* GET http://localhost:8080/api/v1/   -  get greeting message 
+* GET http://localhost:8080/api/v1   -  get greeting message 
 
 Actuator's endpoints:
 * GET http://localhost:8080/actuator
