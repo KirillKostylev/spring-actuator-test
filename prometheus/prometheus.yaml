@@ -1,0 +1,14 @@
+scrape_configs:
+  - job_name: 'Spring Boot Application input'
+#    metrics_path: '/actuator/prometheus'
+
+    metrics_path: '/monitoring'
+    params:
+      format: ['prometheus']
+
+    scrape_interval: 3s
+    static_configs:
+      - targets: [ 'host.docker.internal:8080' ]
+        labels:
+          application: 'spring-actuator-test'
+          instance: 'asd'
